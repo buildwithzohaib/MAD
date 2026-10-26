@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Form</title>
+</head>
+<body>
+    <h1>Student Profile Form</h1>
+    <p>In the name of Allah, the Most Gracious, the Most Merciful.</p>
+    <p>My first HTML assignment | Zohaib Khalid</p>
+    <hr>
+
+    <!-- This is a practice form. No server is connected. -->
+    <form method="get">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+            </p>
+            <p>
+                <label for="rollnumber">Roll Number:</label><br>
+                <input type="text" id="rollnumber" name="rollnumber" placeholder="Enter your roll number" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="student@example.com" required>
+            </p>
+            <p>
+                <label for="birthday">Date of Birth:</label><br>
+                <input type="date" id="birthday" name="birthday">
+            </p>
+            <p>
+                Gender:<br>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </p>
+            <p>
+                <label for="picture">Select Picture:</label><br>
+                <input type="file" id="picture" accept="image/*">
+                <br><small>Practice only: the picture is not uploaded.</small>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Study and Interests</legend>
+            <p>
+                <label for="program">Program:</label><br>
+                <select id="program" name="program" required>
+                    <option value="">Choose a program</option>
+                    <option value="bsit">BS Information Technology</option>
+                    <option value="bscs">BS Computer Science</option>
+                    <option value="bsse">BS Software Engineering</option>
+                </select>
+            </p>
+            <p>
+                Hobbies:<br>
+                <label><input type="checkbox" name="hobby" value="coding"> Coding</label>
+                <label><input type="checkbox" name="hobby" value="cricket"> Cricket</label>
+                <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+            </p>
+            <p>
+                <label for="city">City:</label><br>
+                <select id="city" name="city">
+                    <option value="mananwala">Mananwala</option>
+                    <option value="sheikhupura">Sheikhupura</option>
+                    <option value="nankana-sahib">Nankana Sahib</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="faisalabad">Faisalabad</option>
+                </select>
+            </p>
+            <p>
+                <label for="about">About Me:</label><br>
+                <textarea id="about" name="about" rows="4" cols="30" placeholder="Write a few lines about yourself"></textarea>
+            </p>
+        </fieldset>
+        <p><label><input type="checkbox" name="confirm" value="yes" required> I confirm that my details are correct.</label></p>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+        <p><small>This is an HTML exercise. Submit checks required fields and reloads the page; it does not save your details.</small></p>
+    </form>
+    <hr>
+    <h2>Useful Links</h2>
+    <ul>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Learn HTML</a></li>
+    </ul>
+</body>
+</html>
